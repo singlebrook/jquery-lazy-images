@@ -9,6 +9,8 @@ Spork.prefork do
   require 'rspec/rails'
   require 'rspec/autorun'
 
+  require 'capybara/rspec'
+
   # Requires supporting ruby files with custom matchers and macros, etc,
   # in spec/support/ and its subdirectories.
   Dir[Rails.root.join("spec/support/**/*.rb")].each {|f| require f}
@@ -41,6 +43,8 @@ Spork.prefork do
     #     --seed 1234
     config.order = "random"
   end
+
+  Capybara.default_driver = :selenium
 
 end
 

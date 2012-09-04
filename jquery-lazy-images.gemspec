@@ -6,7 +6,7 @@ require "jquery-lazy-images/version"
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
   s.name        = "jquery-lazy-images"
-  s.version     = JQueryLazyImages::VERSION
+  s.version     = JqueryLazyImages::VERSION
   s.authors     = ["TODO: Your name"]
   s.email       = ["TODO: Your email"]
   s.homepage    = "TODO"
@@ -20,6 +20,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency "sqlite3"
   s.add_development_dependency "rspec-rails"
   s.add_development_dependency "capybara"
+  s.add_development_dependency "capybara-webkit"
   s.add_development_dependency "guard-rspec"
   s.add_development_dependency "guard-spork"
 end
