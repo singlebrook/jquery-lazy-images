@@ -22,6 +22,7 @@ guard 'rspec', :cli => "--color --drb", :version => 2 do
   watch(%r{^spec/support/(.+)\.rb$})                  { "spec" }
   watch('config/routes.rb')                           { "spec/routing" }
   watch('spec/dummy/app/controllers/application_controller.rb')  { "spec/controllers" }
+  watch(%r{^spec/integration/.*_test\.rb$})
 
   # Capybara request specs
   watch(%r{^spec/dummy/app/views/(.+)/.*\.(erb|haml)$})          { |m| "spec/requests/#{m[1]}_spec.rb" }
