@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
     This Rails engine prevents images from loading until they're actually going to be displayed.
     This saves bandwidth, reduces server load, and helps the user stay under their data quota."
 
-  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile"]
 
   s.add_dependency "rails", "~> 3.2.3"
 
