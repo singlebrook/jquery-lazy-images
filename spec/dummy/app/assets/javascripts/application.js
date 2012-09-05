@@ -13,4 +13,4 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
-//= require jquery.lazyload-rails
+//= require jquery.lazy-images

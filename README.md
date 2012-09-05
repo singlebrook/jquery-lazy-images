@@ -11,3 +11,7 @@ The jquery-lazy-images files will be added to the asset pipeline and available f
 ```js
 //= require jquery-lazy-images
 ```
+
+### Rails 3.0 or earlier (or without asset pipeline)
+
+Support coming soon.
