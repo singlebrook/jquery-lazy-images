@@ -10,5 +10,4 @@ To-do
 * Test whether other image helpers are using image_tag under the hood.
 * Add support for Rails 3.0 and below (by adding generator that copies assets into project)
 * Switch to capybara-webkit for testing
-* Adjust Rails dependency. 3.1 should be OK too.
 * Add some documentation about how image_tag gets monkeypatched
