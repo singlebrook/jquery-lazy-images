@@ -16,4 +16,10 @@ describe 'basic lazy image loading' do
     page.source.should have_selector 'img[src*="placekitten"]'
     page.source.should_not have_selector 'img[src*="grey.gif"]'
   end
+
+  it "should load multiple images" do
+    visit multiple_pages_path
+
+    page.source.should have_selector 'img[src*="placekitten"]', count: 2
+  end
 end
