@@ -19,7 +19,13 @@ describe 'basic lazy image loading' do
 
   it "should load multiple images" do
     visit multiple_pages_path
-
     page.source.should have_selector 'img[src*="placekitten"]', count: 2
+  end
+
+  describe 'without javascript', driver: :rack_test do
+    it "should display images" do
+      visit multiple_pages_path
+      page.source.should have_selector 'noscript img[src*="placekitten"]'
+    end
   end
 end
