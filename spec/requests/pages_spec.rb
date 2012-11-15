@@ -24,8 +24,17 @@ describe 'basic lazy image loading' do
 
   describe 'without javascript', driver: :rack_test do
     it "should display images" do
-      visit multiple_pages_path
+      visit basic_pages_path
       page.source.should have_selector 'noscript img[src*="placekitten"]'
+    end
+
+    it "should not display placeholder images" do
+      visit basic_pages_path
+      # I'd like to check the visibility, but RackTest doesn't even parse CSS...
+      # page.find('img[src*="grey.gif"]').should_not be_visible
+      # So instead I'll just check that it has the "lazy" class, which is hidden
+      # via CSS.
+      page.source.should have_selector 'img.lazy[src*="grey.gif"]'
     end
   end
 end

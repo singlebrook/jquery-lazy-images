@@ -7,6 +7,8 @@ module ActionView
 
       options[:data] ||= {}
       options[:data] = {original: path_to_image(source)}
+      options[:class] ||= ""
+      options[:class] << " lazy"
 
       output = image_tag_without_laziness('grey.gif', options)
       output << content_tag('noscript', image_tag_without_laziness(source, orig_options))
