@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    jquery-lazy-images (0.1.0)
+    jquery-lazy-images (0.2.0)
       rails (~> 3.1)
 
 GEM
