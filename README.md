@@ -18,6 +18,22 @@ Add the following line to both app/assets/javascripts/application.js and to app/
 
 Support coming soon.
 
+## Usage
+
+All images rendered with image_tag will automatically be lazy-loaded.
+
+### Images in email
+
+Lazy-loading of images in email *really* doesn't work. We haven't thought of a performant way
+to automatically make these images eager-loading, so you'll need to change your image_tag's in
+your email templates to eager_image_tag's.
+
+This **dangerous** command may help you with this:
+
+```bash
+  sed -i 's/image_tag/eager_image_tag/g' app/views/*_mailer/*
+```
+
 ## Acknowledgements
 
 Thanks to Mika Tuupola for creating [jquery.lazyload.js](http://www.appelsiini.net/projects/lazyload)!

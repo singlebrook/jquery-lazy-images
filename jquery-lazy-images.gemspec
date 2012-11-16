@@ -20,7 +20,7 @@ Gem::Specification.new do |s|
   s.post_install_message = "If you use image_tag in your email templates, please change it to
     eager_image_tag. If you don't, your email messages WILL LOOK WRONG!
     This DANGEROUS command might make those changes for you:
-      sed -i 's/\\bimage_tag\\b/eager_image_tag/g' app/views/*_mailer/*
+      sed -i 's/image_tag/eager_image_tag/g' app/views/*_mailer/*
     "
 
   s.add_development_dependency "rspec-rails"
