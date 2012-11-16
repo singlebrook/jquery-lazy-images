@@ -14,6 +14,7 @@ module ActionView
       output << content_tag('noscript', image_tag_without_laziness(source, orig_options))
     end
 
+    alias_method :eager_image_tag, :image_tag
     alias_method_chain :image_tag, :laziness
 
   end
