@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe 'basic lazy image loading' do
+describe 'basic lazy image loading', :js => true do
   it "should load the Javascript from the plugin" do
     visit basic_pages_path
     page.source.should have_selector 'img[data-original]'
@@ -12,7 +12,7 @@ describe 'basic lazy image loading' do
     page.source.should have_selector 'img[src*="grey.gif"]'
     page.source.should_not have_selector 'img[src*="placekitten"]'
 
-    page.evaluate_script("scrollTo(0, 1000000)");
+    page.evaluate_script("window.scrollTo(0, 100000000)");
     page.source.should have_selector 'img[src*="placekitten"]'
     page.source.should_not have_selector 'img[src*="grey.gif"]'
   end

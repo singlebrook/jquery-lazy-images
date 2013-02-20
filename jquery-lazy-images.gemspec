@@ -23,10 +23,12 @@ Gem::Specification.new do |s|
       sed -i 's/image_tag/eager_image_tag/g' app/views/*_mailer/*
     "
 
-  s.add_development_dependency "rspec-rails"
   s.add_development_dependency "capybara"
-  s.add_development_dependency "launchy"
   s.add_development_dependency "guard-rspec"
   s.add_development_dependency "guard-spork"
+  s.add_development_dependency "launchy"
+  s.add_development_dependency "poltergeist"
   s.add_development_dependency "rb-fsevent"
+  s.add_development_dependency "rspec-rails"
+  s.add_development_dependency "webrat"
 end

@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe 'images in emails' do
+describe 'images in emails', :js => true do
 
   before do
     ActionMailer::Base.deliveries = []
