@@ -12,7 +12,7 @@ describe 'basic lazy image loading', :js => true do
     page.should have_css 'img[src*="grey.gif"]'
     page.should_not have_css 'img[src*="placekitten"]'
 
-    page.evaluate_script("window.scrollTo(0, 1000000)");
+    page.evaluate_script("scrollTo(0, 1000000)");
     page.should have_css 'img[src*="placekitten"]'
     page.should_not have_css 'img[src*="grey.gif"]'
   end
