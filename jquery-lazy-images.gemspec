@@ -29,5 +29,4 @@ Gem::Specification.new do |s|
   s.add_development_dependency "poltergeist"
   s.add_development_dependency "rb-fsevent"
   s.add_development_dependency "rspec-rails"
-  s.add_development_dependency "webrat"
 end

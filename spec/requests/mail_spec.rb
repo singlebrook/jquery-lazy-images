@@ -10,6 +10,6 @@ describe 'images in emails', :js => true do
     visit send_mail_mail_path
 
     mail = ActionMailer::Base.deliveries.first
-    mail.body.should_not have_selector 'img.lazy'
+    mail.body.should_not =~ /class=".*lazy.*"/
   end
 end
