@@ -34,6 +34,11 @@ This **dangerous** command may help you with this:
   sed -i 's/image_tag/eager_image_tag/g' app/views/*_mailer/*
 ```
 
+## Development
+
+To run the specs you must have [PhantomJS](http://phantomjs.org/) [installed](http://phantomjs.org/build.html).
+If you use [homebrew](http://mxcl.github.com/homebrew/) you can run `brew install phantomjs`.
+
 ## Acknowledgements
 
 Thanks to Mika Tuupola for creating [jquery.lazyload.js](http://www.appelsiini.net/projects/lazyload)!
