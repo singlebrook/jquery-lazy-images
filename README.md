@@ -43,3 +43,9 @@ If you use [homebrew](http://mxcl.github.com/homebrew/) you can run `brew instal
 
 Thanks to Mika Tuupola for creating [jquery.lazyload.js](http://www.appelsiini.net/projects/lazyload)!
 This gem bundles that library, and he's done most of the hard work for us.
+
+## Contributors
+
+* @sbleon - Initial build
+* @jkonowitch - Initial build
+* @bobbyw - Poltergeist testing support.
