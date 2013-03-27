@@ -6,7 +6,9 @@ jQuery plugin for lazy-loading of images. Why download what you can't see?
 
 ### Rails 3.1 or greater (with asset pipeline *enabled*)
 
-The jquery.lazy-images files will be added to the asset pipeline and available for you to use.
+Add to your Gemfile: `gem 'jquery-lazy-images'`. Run `bundle install`.
+
+The jquery.lazy-images files is now added to the asset pipeline and available for you to use.
 
 Add `require jquery.lazy-images` to app/assets/javascripts/application.js and app/assets/stylesheets/application.css, following the existing format of those files.
 
