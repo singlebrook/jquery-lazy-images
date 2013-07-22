@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
 
   s.files = Dir["{app,config,db,lib,vendor}/**/*"] + ["MIT-LICENSE", "Rakefile"]
 
-  s.add_dependency "rails", "~> 3.1"
+  s.add_dependency "rails", ">= 3.1.0"
 
   s.post_install_message = "If you use image_tag in your email templates, please change it to
     eager_image_tag. If you don't, your email messages WILL LOOK WRONG!

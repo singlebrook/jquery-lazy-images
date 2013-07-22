@@ -5,7 +5,7 @@ Dummy::Application.routes.draw do
     end
   end
 
-  resource :mail, controller: 'Mail', only: [] do
+  resource :mailings, only: [] do
     collection do
       get :send_mail
     end
