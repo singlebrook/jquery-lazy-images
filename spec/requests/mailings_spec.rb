@@ -7,7 +7,7 @@ describe 'images in emails', :js => true do
   end
 
   it "eager images should appear normally" do
-    visit send_mail_mail_path
+    visit send_mail_mailings_path
 
     mail = ActionMailer::Base.deliveries.first
     mail.body.should_not =~ /class=".*lazy.*"/
