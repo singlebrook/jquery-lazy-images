@@ -1,3 +1,6 @@
+Gemfile.lock
+.ruby-version
+.rvmrc
 .bundle/
 log/*.log
 pkg/
