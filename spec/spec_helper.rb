@@ -33,7 +33,7 @@ Spork.prefork do
     config.run_all_when_everything_filtered = true
 
     # Shorten backtraces on test failures
-    config.backtrace_clean_patterns = [
+    config.backtrace_exclusion_patterns = [
       /\/lib\d*\/ruby\//
     ]
   end
