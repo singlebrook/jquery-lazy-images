@@ -39,8 +39,9 @@ If you use [homebrew](http://mxcl.github.com/homebrew/) you can run `brew instal
 
 ## Acknowledgements
 
-Thanks to Mika Tuupola for creating [jquery.lazyload.js](http://www.appelsiini.net/projects/lazyload)!
-This gem bundles that library, and he's done most of the hard work for us.
+Thanks to Mika Tuupola for creating [jquery.lazyload.js](http://www.appelsiini.net/projects/lazyload)! This gem bundles that library, and he's done most of the hard work for us.
+
+Thanks to Peter Goldstein (@petergoldstein) for adding Rails 4 compatibility and hooking us up to Travis CI!
 
 ## Contributors
 
