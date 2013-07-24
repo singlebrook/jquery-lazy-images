@@ -1,6 +1,8 @@
 # jquery-lazy-images
 
-jQuery plugin for lazy-loading of images. Why download what you can't see?
+jQuery plugin for lazy-loading of images. Why have your users download what they can't see?
+
+[![Build Status](https://travis-ci.org/singlebrook/jquery-lazy-images.png)](https://travis-ci.org/singlebrook/jquery-lazy-images)
 
 ## Installation
 
