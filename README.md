@@ -16,7 +16,7 @@ Add `require jquery.lazy-images` to app/assets/javascripts/application.js and ap
 
 ### Rails 3.0 or earlier (or without asset pipeline)
 
-Support coming soon.
+You're on your own here. Sorry!
 
 ## Usage
 
@@ -43,10 +43,9 @@ If you use [homebrew](http://mxcl.github.com/homebrew/) you can run `brew instal
 
 Thanks to Mika Tuupola for creating [jquery.lazyload.js](http://www.appelsiini.net/projects/lazyload)! This gem bundles that library, and he's done most of the hard work for us.
 
-Thanks to Peter Goldstein (@petergoldstein) for adding Rails 4 compatibility and hooking us up to Travis CI!
-
 ## Contributors
 
 * @sbleon - Initial build
 * @jkonowitch - Initial build
-* @bobbyw - Poltergeist testing support.
+* @bobbyw - Poltergeist testing support
+* @petergoldstein - Rails 4 compatibility and Travis CI integration
