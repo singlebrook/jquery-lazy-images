@@ -11,7 +11,7 @@ module ActionView
         options[:class] ||= ""
         options[:class] << " lazy"
 
-        output = image_tag_without_laziness('grey.gif', options)
+        output = image_tag_without_laziness('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC', options)
         output << content_tag('noscript', image_tag_without_laziness(source, orig_options))
       end
 
