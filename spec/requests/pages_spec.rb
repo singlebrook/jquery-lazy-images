@@ -9,7 +9,7 @@ describe 'basic lazy image loading', :js => true do
   it "should load the real image only when the user scrolls to it" do
     visit basic_pages_path
 
-    page.should have_css 'img[src*="grey.gif"]'
+    page.should have_css 'img[src*="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"]'
     page.should_not have_css 'img[src*="placekitten"]'
 
     page.evaluate_script("scrollTo(0, 1000000)");
