@@ -7,7 +7,7 @@ module ActionView
         orig_options = options.dup
 
         options[:data] ||= {}
-        options[:data] = {original: path_to_image(source)}
+        options[:data][:original] = path_to_image(source)
         options[:class] ||= ""
         options[:class] << " lazy"
 

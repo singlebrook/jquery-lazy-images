@@ -22,6 +22,11 @@ describe 'basic lazy image loading', :js => true do
     page.should have_css 'img[src*="placekitten"]', count: 2
   end
 
+  it "should preserve the image's data attributes" do
+    visit data_attrs_pages_path
+    page.should have_css 'img[data-foo="bar"]'
+  end
+
   describe 'without javascript', driver: :rack_test do
     it "should display images" do
       visit basic_pages_path
