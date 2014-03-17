@@ -1,7 +1,7 @@
 Dummy::Application.routes.draw do
   resource :pages, only: [] do
     collection do
-      get :basic, :multiple
+      get :basic, :multiple, :data_attrs
     end
   end
 
