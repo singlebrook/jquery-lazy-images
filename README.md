@@ -34,6 +34,14 @@ This **dangerous** command may help you with this:
   sed -i 's/image_tag/eager_image_tag/g' app/views/*_mailer/*
 ```
 
+### Precompiling the assets
+
+If you precompile your assets, be sure that you have a line like this in your `config/environments/production.rb` (or similar) to avoid getting a 404 on the placeholder image (grey.gif).
+
+```ruby
+config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
+```
+
 ## Development
 
 To run the specs you must have [PhantomJS](http://phantomjs.org/) [installed](http://phantomjs.org/build.html).
